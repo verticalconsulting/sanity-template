@@ -30,14 +30,6 @@ export type FormDonateCar = {
   successMessage?: string;
 };
 
-export type ColorVariant = "background" | "primary" | "secondary" | "card" | "accent" | "destructive" | "muted";
-
-export type SectionPadding = {
-  _type: "section-padding";
-  top?: boolean;
-  bottom?: boolean;
-};
-
 export type FormContact = {
   _type: "form-contact";
   padding?: SectionPadding;
@@ -344,7 +336,15 @@ export type Hero1 = {
   } & Link>;
 };
 
+export type SectionPadding = {
+  _type: "section-padding";
+  top?: boolean;
+  bottom?: boolean;
+};
+
 export type ButtonVariant = "default" | "destructive" | "outline" | "secondary" | "ghost" | "link";
+
+export type ColorVariant = "background" | "primary" | "secondary" | "card" | "accent" | "destructive" | "muted";
 
 export type Link = {
   _type: "link";
@@ -562,6 +562,10 @@ export type Page = {
     _key: string;
   } & FormNewsletter | {
     _key: string;
+  } & FormContact | {
+    _key: string;
+  } & FormDonateCar | {
+    _key: string;
   } & AllPosts>;
   meta_title?: string;
   meta_description?: string;
@@ -768,7 +772,7 @@ export type Geopoint = {
   alt?: number;
 };
 
-export type AllSanitySchemaTypes = AllPosts | FormDonateCar | ColorVariant | SectionPadding | FormContact | FormNewsletter | Faqs | LogoCloud1 | Cta1 | Timelines1 | TimelineRow | Carousel2 | Carousel1 | GridRow | GridPost | PricingCard | GridCard | SplitInfo | SplitInfoList | SplitImage | SplitCard | SplitCardsList | SplitContent | SplitRow | SectionHeader | Hero2 | Hero1 | ButtonVariant | Link | BlockContent | Settings | SanityImageCrop | SanityImageHotspot | Navigation | Testimonial | Faq | Category | Page | Post | Author | Slug | Code | SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityImageMetadata | SanityFileAsset | SanityAssetSourceData | SanityImageAsset | Geopoint;
+export type AllSanitySchemaTypes = AllPosts | FormDonateCar | FormContact | FormNewsletter | Faqs | LogoCloud1 | Cta1 | Timelines1 | TimelineRow | Carousel2 | Carousel1 | GridRow | GridPost | PricingCard | GridCard | SplitInfo | SplitInfoList | SplitImage | SplitCard | SplitCardsList | SplitContent | SplitRow | SectionHeader | Hero2 | Hero1 | SectionPadding | ButtonVariant | ColorVariant | Link | BlockContent | Settings | SanityImageCrop | SanityImageHotspot | Navigation | Testimonial | Faq | Category | Page | Post | Author | Slug | Code | SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityImageMetadata | SanityFileAsset | SanityAssetSourceData | SanityImageAsset | Geopoint;
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./app/sitemap.ts
 // Variable: pagesQuery
@@ -1112,6 +1116,26 @@ export type PAGE_QUERYResult = {
         markDefs: null;
       }> | null;
     }> | null;
+  } | {
+    _type: "form-contact";
+    _key: string;
+    padding: SectionPadding | null;
+    colorVariant: ColorVariant | null;
+    stackAlign: "center" | "left" | null;
+    title: string | null;
+    description: string | null;
+    buttonText: string | null;
+    successMessage: string | null;
+  } | {
+    _type: "form-donate-car";
+    _key: string;
+    padding: SectionPadding | null;
+    colorVariant: ColorVariant | null;
+    stackAlign: "center" | "left" | null;
+    title: string | null;
+    description: string | null;
+    buttonText: string | null;
+    successMessage: string | null;
   } | {
     _type: "form-newsletter";
     _key: string;

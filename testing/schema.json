@@ -109,73 +109,6 @@
     }
   },
   {
-    "name": "color-variant",
-    "type": "type",
-    "value": {
-      "type": "union",
-      "of": [
-        {
-          "type": "string",
-          "value": "background"
-        },
-        {
-          "type": "string",
-          "value": "primary"
-        },
-        {
-          "type": "string",
-          "value": "secondary"
-        },
-        {
-          "type": "string",
-          "value": "card"
-        },
-        {
-          "type": "string",
-          "value": "accent"
-        },
-        {
-          "type": "string",
-          "value": "destructive"
-        },
-        {
-          "type": "string",
-          "value": "muted"
-        }
-      ]
-    }
-  },
-  {
-    "name": "section-padding",
-    "type": "type",
-    "value": {
-      "type": "object",
-      "attributes": {
-        "_type": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "string",
-            "value": "section-padding"
-          }
-        },
-        "top": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "boolean"
-          },
-          "optional": true
-        },
-        "bottom": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "boolean"
-          },
-          "optional": true
-        }
-      }
-    }
-  },
-  {
     "name": "form-contact",
     "type": "type",
     "value": {
@@ -2104,6 +2037,36 @@
     }
   },
   {
+    "name": "section-padding",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "section-padding"
+          }
+        },
+        "top": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
+        },
+        "bottom": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
+        }
+      }
+    }
+  },
+  {
     "name": "button-variant",
     "type": "type",
     "value": {
@@ -2132,6 +2095,43 @@
         {
           "type": "string",
           "value": "link"
+        }
+      ]
+    }
+  },
+  {
+    "name": "color-variant",
+    "type": "type",
+    "value": {
+      "type": "union",
+      "of": [
+        {
+          "type": "string",
+          "value": "background"
+        },
+        {
+          "type": "string",
+          "value": "primary"
+        },
+        {
+          "type": "string",
+          "value": "secondary"
+        },
+        {
+          "type": "string",
+          "value": "card"
+        },
+        {
+          "type": "string",
+          "value": "accent"
+        },
+        {
+          "type": "string",
+          "value": "destructive"
+        },
+        {
+          "type": "string",
+          "value": "muted"
         }
       ]
     }
@@ -3475,6 +3475,36 @@
                 "rest": {
                   "type": "inline",
                   "name": "form-newsletter"
+                }
+              },
+              {
+                "type": "object",
+                "attributes": {
+                  "_key": {
+                    "type": "objectAttribute",
+                    "value": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "rest": {
+                  "type": "inline",
+                  "name": "form-contact"
+                }
+              },
+              {
+                "type": "object",
+                "attributes": {
+                  "_key": {
+                    "type": "objectAttribute",
+                    "value": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "rest": {
+                  "type": "inline",
+                  "name": "form-donate-car"
                 }
               },
               {
