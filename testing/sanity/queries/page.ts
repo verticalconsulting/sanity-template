@@ -11,6 +11,8 @@ import { cta1Query } from "./cta/cta-1";
 import { logoCloud1Query } from "./logo-cloud/logo-cloud-1";
 import { faqsQuery } from "./faqs";
 import { formNewsletterQuery } from "./forms/newsletter";
+import { formContactQuery } from "./forms/contact";
+import { formDonateCarQuery } from "./forms/donate-car";
 import { allPostsQuery } from "./all-posts";
 
 export const PAGE_QUERY = groq`
@@ -28,6 +30,8 @@ export const PAGE_QUERY = groq`
       ${logoCloud1Query},
       ${faqsQuery},
       ${formNewsletterQuery},
+      ${formContactQuery},
+      ${formDonateCarQuery},
       ${allPostsQuery},
     },
     meta_title,
