@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx sanity@latest mcp:*)",
+      "Bash(npm cache clean:*)",
+      "Bash(echo $HOME)",
+      "Read(//c/Users/ogDevOps/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
