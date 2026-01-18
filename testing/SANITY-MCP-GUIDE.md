@@ -45,7 +45,7 @@ Add to your editor's MCP configuration:
       "command": "npx",
       "args": ["-y", "@sanity/mcp-server@latest"],
       "env": {
-        "SANITY_API_TOKEN": "yourtoken"
+        "SANITY_API_TOKEN": "sk5XEinKJzcdnITrNnyG8TIBq5goVhmsh7uGX0YVB0OozBhcNyQ7aFnFSsoGPjNEbGcKJc8lIeQD17upKdhgwCKItpX8WGKBscf5XljGA0uYhROz4zI5kFLLNALem6qcJubjoAXLvKQLVTje6LG4PHsaEXLli4rYtHcKz1dEZnNoQmnAkEW8"
       }
     }
   }
